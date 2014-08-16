@@ -1,61 +1,74 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-    <title>Culture Cake</title>
-    <link type="text/css" rel="stylesheet" href="normalize.css"/> 
-    <link rel="stylesheet" type="text/css" href="skeleton.css"/>
-    <link type="text/css" rel="stylesheet" href="base.css"/>
-    <link type="text/css" rel="stylesheet" href="modules.css"/>
-</head>     
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <title>Culture Cake</title>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+      <link type="text/css" rel="stylesheet" href="base.css"/>
+      <link type="text/css" rel="stylesheet" href="modules.css"/>
+      <link type="text/css" rel="stylesheet" href="states.css"/>
+  </head>     
 
-<body>
+  <body>
 
-  <header>
-      <nav>
-        <h1 class="logo">Culture Cake</h1>
-          <ul class="main_nav">
-             <li><a href="LINK">Places</a></li>
-                <ul class="dropdown">
-                  <li><a href-"Link to city">Seattle</a></li>
-                  <li><a href-"Link to city">Paris</a></li>
-                  <li><a href-"Link to city">Mumbai</a></li>
-                  <li><a href-"Link to city">Tokyo</a></li>
-                  <li><a href-"Link to city">Cape Town</a></li>
-                  <li><a href-"Link to city">Rio</a></li>
-                </ul>
+    <div id="wrapper">
 
-              <li><a href="LINK">About</a></li>
-              <li><a href="LINK">Login</a></li>
-            </ul>
-      </nav>  
-  </header>
+      <header class="header--fixed">
+        <h1 class="header__logo"><a href="CultureCake.html">Culture Cake</a></h1>
+        <nav class="main-nav">
 
+          <ul class="main-nav__places-about-login">
+            <li class="main-nav__places"><a href="places.html">Places</a></li>
+              <ul class="main-nav__places-dropdown--hover">
+                <li class="main-nav__city"><a href="seattle.html">Seattle</a></li>
+                <li class="main-nav__city"><a href="paris.html">Paris</a></li>
+                <li class="main-nav__city"><a href="mumbai.html">Mumbai</a></li>
+                <li class="main-nav__city"><a href="tokyo.html">Tokyo</a></li>
+                <li class="main-nav__city"><a href="capetown.html">Cape Town</a></li>
+                <li class="main-nav__city"><a href="rio.html">Rio</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__about"><a href="about.html">About</a></li>
+            <li class="main-nav__login--hover"><a href="login.html">Login</a></li>
+          </ul>
 
-  <img id="world_map" src="Globe"/>
-    <a href="LINK to city"><img class="city_images" src="LOCATION"></a>
-    <a href="LINK to city"><img class="city_images" src="LOCATION"></a>
-    <a href="LINK to city"><img class="city_images" src="LOCATION"></a>
-    <a href="LINK to city"><img class="city_images" src="LOCATION"></a>
-    <a href="LINK to city"><img class="city_images" src="LOCATION"></a>
-    <a href="LINK to city"><img class="city_images" src="LOCATION"></a>
+        </nav>  
+      </header>
 
-  <footer>
+      <article class="world-map">
 
-    <a href="link to facebook"><img class="social_media" src="icon"></a>
-    <a href="link to twitter"><img class="social_media" src="icon"></a>
-    <a href="link to pinterest"><img class="social_media" src="icon"></a>
-    <a href="link to linkedin"><img class="social_media" src="icon"></a>
+        <img class="world-map__image"/>
+        <a class="world-map__city" href="html/mumbai.html"><img id="calendula-image" class="city-icon--hover" src="../images/calendula-flower.png"></a>
+        <a class="world-map__city" href="html/tokyo.html"><img id="cherry-image" class="city-icon--hover" src="../images/cherry_blossom.png"></a>
+        <a class="world-map__city" href="html/rio.html"><img id="parrot-image" class="city-icon--hover" src="../images/parrot.png"></a>
+        <a class="world-map__city" href="Html/paris.html"><img id="macaron-image" class="city-icon--hover" src="../images/macaron.png"></a>
+        <a class="world-map__city" href="html/seattle.html"><img id="evergreen-image" class="city-icon--hover" src="../images/tree.png"></a>
+        <a class="world-map__city" href="html/capetown.html"><img id="protea-image" class="city_images--hover" src="../images/protea.png"></a>
 
-    <a href="popup link">Sign Up!</a>
-    <form>
-      <ul>
-        <li><input type="text" name="firstname"></li>
-        <li><input type="text" name="email"></li>
-        <li><input type="text" name="phone"></li>
-        <li><input type="text" name="address"></li>
-      </ul>
-    </form>
+      </article>
 
-  </footer>
-</body>
+      <footer class="connect">
+
+        <ul class="social-media">
+          <li class-"social-media__facebook"><a href="link to facebook"><img src="icon"></a></li>
+          <li class-"social-media__twitter"><a href="link to twitter"><img src="icon"></a></li>
+          <li class-"social-media__pinterest"><a href="link to pinterest"><img src="icon"></a></li>
+          <li class-"social-media__linkedin"><a href="link to linkedin"><img src="icon"></a></li>
+          <li class-"social-media__contact"><a href="popup_link">Say Hello</a></li>
+        </ul>
+        
+        <form class="sign-up">
+          <ul class="sign-up__fields">
+            <li class="sign-up__name"><input type="text" name="first-name"></li>
+            <li class="sign-up__email"><input type="text" name="email"></li>
+            <li class="sign-up__phone"><input type="text" name="phone"></li>
+            <li class="sign-up__address"><input type="text" name="address"></li>
+          </ul>
+          <button class="sign-up__submit" type="button">Submit</button>
+        </form>
+
+      </footer>
+    </div> <!--end wrapper-->
+  </body>
 </html>

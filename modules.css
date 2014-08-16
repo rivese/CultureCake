@@ -1,0 +1,87 @@
+body {
+  background: url(../images/world_map.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.header__logo {
+  margin: 20px 0 0 5%;
+}
+
+.header__logo a {
+  color: #0a40ed;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+.main-nav__places-about-login {
+  margin: -35px 0 0 60%;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 7%;
+}
+
+.main-nav li a {
+  color: #0a40ed;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.main-nav__places-dropdown--hover, .social-media {
+  display: none;
+}
+
+.city-icon--hover {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+}
+
+#parrot-image {
+  height: 80px;
+  width: 80px;
+  margin-left: 25%;
+  margin-top: 43%;
+}
+
+#evergreen-image {
+  margin: 12% 0 0 14%;
+}
+
+#cherry-image {
+  height: 150px;
+  width: 220px;
+  margin: 13% 0 0 73%;
+}
+
+#macaron-image {
+  margin: 15% 0 0 45%;
+}
+
+#calendula-image {
+  margin: 25% 0 0 65%;
+}
+
+#protea-image {
+  height: 120px;
+  width: 210px;
+  margin: 37% 0 0 45%;
+}
+
+form {
+  display: none;
+}
