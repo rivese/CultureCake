@@ -1,5 +1,5 @@
 body {
-  background: url(../images/world_map.jpg) no-repeat;
+  background: url(images/home_page/world_map.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,10 +52,10 @@ body {
 }
 
 #parrot-image {
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   margin-left: 25%;
-  margin-top: 43%;
+  margin-top: 44%;
 }
 
 #evergreen-image {
@@ -63,9 +63,9 @@ body {
 }
 
 #cherry-image {
-  height: 150px;
-  width: 220px;
-  margin: 13% 0 0 73%;
+  height: 70px;
+  width: 70px;
+  margin: 15% 0 0 79%;
 }
 
 #macaron-image {
@@ -77,11 +77,42 @@ body {
 }
 
 #protea-image {
-  height: 120px;
-  width: 210px;
-  margin: 37% 0 0 45%;
+  height: 65px;
+  width: 85px;
+  margin: 39% 0 0 49%;
 }
 
 form {
   display: none;
+}
+
+/* Masonry Layout for City Pages 
+ * Source: http://sickdesigner.com/masonry-css-getting-awesome-with-css3/
+ */
+
+.city-images--masonry-layout img {
+  width: 100%;
+  height: auto;
+}
+
+.city-images--masonry-layout {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+  -moz-column-gap: 10px;
+  -webkit-column-gap: 10px;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+ .city-images--masonry-layout div {
+  display: inline-block;
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+.city-name {
+  text-align: center;
+  font-size: 3em;
+  padding: 20px 0 20px;
 }
