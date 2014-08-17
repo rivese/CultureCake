@@ -18,10 +18,6 @@ function popOffCity() {
   }
 }
 
-function switchImage() {
-
-}
-
 function displayMenu() {
   var elDropdown = document.getElementById('dropdown-menu');
   elDropdown.style.display = 'block';
@@ -41,7 +37,13 @@ function displayForm() {
   }
 }
 
-/* adding event listeners */
+function hideForm() {
+  var elForm = document.getElementById('form');
+  elForm.style.display = 'none';
+}
+
+
+/* event listeners */
 
 var elCities = document.getElementsByClassName('city-icon--mouseover');
 for (i = 0; i < elCities.length; i++) {
@@ -58,6 +60,9 @@ elDropdown.addEventListener('mouseout', hideMenu, false);
 
 var elLogin = document.getElementById('login');
 elLogin.addEventListener('mouseover', displayForm, false);
+
+var elSignInButton = document.getElementById('sign-in');
+elSignInButton.addEventListener('click', hideForm, false);
 
 
 

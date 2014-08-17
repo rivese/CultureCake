@@ -72,7 +72,7 @@ display: block;
 padding: 10px 15px;
 color: #757575; 
 text-decoration: none;
-font-size: 1.3em;
+font-size: 1em;
 font-family: 'Roboto', sans-serif;
 }
 
@@ -94,7 +94,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 #seattle {
-  margin: 12% 0 0 14%;
+  margin: 9% 0 0 14.5%;
 }
 
 #tokyo {
@@ -104,11 +104,11 @@ font-family: 'Roboto', sans-serif;
 }
 
 #paris {
-  margin: 15% 0 0 45%;
+  margin: 12% 0 0 45%;
 }
 
 #mumbai {
-  margin: 25% 0 0 65%;
+  margin: 23% 0 0 65%;
 }
 
 #cape_town {
@@ -132,20 +132,19 @@ font-family: 'Roboto', sans-serif;
 
 .sign-up {
   height: 400px;
-  width: 600px;
-  margin: 0px auto 0px auto;
-  background-color: red;
+  width: 700px;
+  margin: 40px auto 0px auto;
+  background-color: rgba(255, 0, 0, .7);
   padding-top: 50px;
   display: none;
 }
 
 .sign-up__fields {
   list-style: none;
-  margin-left: 25%;
 }
 
 .sign-up ul:first-child {
-  margin-top: 80px; 
+  margin-top: 130px; 
 }
 
 .sign-up ul:nth-child(2) {
@@ -154,13 +153,35 @@ font-family: 'Roboto', sans-serif;
 
 .form-input {
   width: 250px;
-  height: 30px;
+  height: 40px;
+  margin-left: 180px;
 }
 
 .sign-up__button {
   border: none;
+  height: 40px;
   width: 250px;
+  margin-top: 10px;
+  margin-left: 100px;
+  background-color: #2cdba1;
+  color: #5b5b5b;
+  font-weight: 560;
 }
+
+.login {
+  margin-top: 110px;
+  margin-left: 20px;
+  width: 100px;
+  float: left;
+  background-color: #939393;
+  color: white;
+}
+
+footer {
+  display: none;
+}
+
+
 
 
 /* Masonry Layout for City Pages 
@@ -190,6 +211,7 @@ font-family: 'Roboto', sans-serif;
 
 .city-name {
   text-align: center;
+  color: #4d4d4d;
   font-size: 3em;
   padding: 20px 0 20px;
 }
