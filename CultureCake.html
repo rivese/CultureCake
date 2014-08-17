@@ -31,7 +31,7 @@
               </ul>
             </li>
             <li class="main-nav__about"><a href="about.html">About</a></li>
-            <li class="main-nav__login--hover"><a href="login.html">Login</a></li>
+            <li id="login" class="main-nav__login--hover"><a href="login.html">Login</a></li>
           </ul>
 
         </nav>  
@@ -64,6 +64,15 @@
 
       </article>
 
+      <form id="form" class="sign-up">
+        <ul>
+          <li class="sign-up__fields"><input class="form-input" type="text" placeholder="email"</li>
+          <li class="sign-up__fields"><input class="form-input" type="text" placeholder="choose a password"</li>
+        </ul>
+        <button class="sign-up__button" type="button">Sign In</button>
+        <button class="sign-up__button login" type="button">Log in</button>
+      </form>
+
       <footer class="connect">
 
         <ul class="social-media">
@@ -74,17 +83,8 @@
           <li class-"social-media__contact"><a href="popup_link">Say Hello</a></li>
         </ul>
         
-        <form class="sign-up">
-          <ul class="sign-up__fields">
-            <li class="sign-up__name"><input type="text" name="first-name"></li>
-            <li class="sign-up__email"><input type="text" name="email"></li>
-            <li class="sign-up__phone"><input type="text" name="phone"></li>
-            <li class="sign-up__address"><input type="text" name="address"></li>
-          </ul>
-          <button class="sign-up__submit" type="button">Submit</button>
-        </form>
-
       </footer>
+
     </div> <!--end wrapper-->
     <script src="CultureCake.js"></script>
   </body>

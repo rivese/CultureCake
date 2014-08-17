@@ -32,6 +32,17 @@ function hideMenu() {
   elDropdown.style.display = 'none';
 }
 
+function displayForm() {
+  var elForm = document.getElementById('form');
+  elForm.style.display = 'block';
+  var elCities = document.getElementsByClassName('city-icon--mouseover');
+  for (i = 0; i < elCities.length; i++) {
+    elCities[i].style.zIndex = '-100';
+  }
+}
+
+/* adding event listeners */
+
 var elCities = document.getElementsByClassName('city-icon--mouseover');
 for (i = 0; i < elCities.length; i++) {
   elCities[i].addEventListener('mouseover', popUpCity, false);
@@ -40,7 +51,15 @@ for (i = 0; i < elCities.length; i++) {
 
 var elem = document.getElementById('places');
 elem.addEventListener('mouseover', displayMenu, false);
-elem.addEventListener('mouseout', hideMenu, false);
+
+var elDropdown = document.getElementById('dropdown-menu');
+elDropdown.addEventListener('mouseover', displayMenu, false);
+elDropdown.addEventListener('mouseout', hideMenu, false);
+
+var elLogin = document.getElementById('login');
+elLogin.addEventListener('mouseover', displayForm, false);
+
+
 
 
 

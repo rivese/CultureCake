@@ -67,14 +67,14 @@ body {
   float: none;
 }
 
- .places-dropdown--hover li a {
-  display: block; 
-  padding: 10px 15px;
-  color: #757575; 
-  text-decoration: none;
-  font-size: 1.3em;
-  font-family: 'Roboto', sans-serif;
-  }
+.places-dropdown--hover li a {
+display: block; 
+padding: 10px 15px;
+color: #757575; 
+text-decoration: none;
+font-size: 1.3em;
+font-family: 'Roboto', sans-serif;
+}
 
 .social-media {
   display: none;
@@ -130,9 +130,38 @@ body {
   padding: 50px 0 0 50px;
 }
 
-form {
+.sign-up {
+  height: 400px;
+  width: 600px;
+  margin: 0px auto 0px auto;
+  background-color: red;
+  padding-top: 50px;
   display: none;
 }
+
+.sign-up__fields {
+  list-style: none;
+  margin-left: 25%;
+}
+
+.sign-up ul:first-child {
+  margin-top: 80px; 
+}
+
+.sign-up ul:nth-child(2) {
+  margin-top: 30px;
+}
+
+.form-input {
+  width: 250px;
+  height: 30px;
+}
+
+.sign-up__button {
+  border: none;
+  width: 250px;
+}
+
 
 /* Masonry Layout for City Pages 
  * Source: http://sickdesigner.com/masonry-css-getting-awesome-with-css3/
