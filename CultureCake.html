@@ -19,14 +19,15 @@
         <nav class="main-nav">
 
           <ul class="main-nav__places-about-login">
-            <li class="main-nav__places"><a href="places.html">Places</a></li>
-              <ul class="main-nav__places-dropdown--hover">
-                <li class="main-nav__city"><a href="seattle.html">Seattle</a></li>
-                <li class="main-nav__city"><a href="paris.html">Paris</a></li>
-                <li class="main-nav__city"><a href="mumbai.html">Mumbai</a></li>
-                <li class="main-nav__city"><a href="tokyo.html">Tokyo</a></li>
-                <li class="main-nav__city"><a href="capetown.html">Cape Town</a></li>
-                <li class="main-nav__city"><a href="rio.html">Rio</a></li>
+            <li class="main-nav__places"><a id="places" href="places.html">Places</a></li>
+             
+              <ul id="dropdown-menu" class="places-dropdown--hover">
+                <li class="places-dropdown--hover__city"><a href="seattle.html">Seattle</a></li>
+                <li class="places-dropdown--hover__city"><a href="paris.html">Paris</a></li>
+                <li class="places-dropdown--hover__city"><a href="mumbai.html">Mumbai</a></li>
+                <li class="places-dropdown--hover__city"><a href="tokyo.html">Tokyo</a></li>
+                <li class="places-dropdown--hover__city"><a href="capetown.html">Cape Town</a></li>
+                <li class="places-dropdown--hover__city"><a href="rio.html">Rio</a></li>
               </ul>
             </li>
             <li class="main-nav__about"><a href="about.html">About</a></li>
@@ -38,13 +39,28 @@
 
       <article class="world-map">
 
-        <img class="world-map__image"/>
-        <a class="world-map__city" href="html/mumbai.html"><img id="calendula-image" class="city-icon--hover" src="../images/calendula-flower.png"></a>
-        <a class="world-map__city" href="html/tokyo.html"><img id="cherry-image" class="city-icon--hover" src="../images/cherry_blossom.png"></a>
-        <a class="world-map__city" href="html/rio.html"><img id="parrot-image" class="city-icon--hover" src="../images/parrot.png"></a>
-        <a class="world-map__city" href="Html/paris.html"><img id="macaron-image" class="city-icon--hover" src="../images/macaron.png"></a>
-        <a class="world-map__city" href="html/seattle.html"><img id="evergreen-image" class="city-icon--hover" src="../images/tree.png"></a>
-        <a class="world-map__city" href="html/capetown.html"><img id="protea-image" class="city_images--hover" src="../images/protea.png"></a>
+        <section class="city-icons--visible">
+
+          <img class="world-map__image"/>
+          <img id="mumbai" class="city-icon--mouseover" src="images/home_page/calendula-flower.png"/>
+          <img id="tokyo" class="city-icon--mouseover" src="images/home_page/cherry-image.png"/>
+          <img id="rio" class="city-icon--mouseover" src="images/home_page/parrot-image.png"/>
+          <img id="paris" class="city-icon--mouseover" src="images/home_page/macaron-image.png"/>
+          <img id="seattle" class="city-icon--mouseover" src="images/home_page/evergreen-image.png"/>
+          <img id="cape_town" class="city-icon--mouseover" src="images/home_page/protea-image.png"/>
+
+        </section>
+
+        <section class="city-bubbles--hidden">
+
+          <h3><a id="mumbai" href="mumbai.html" class="city-bubbles__city">Mumbai</a></h3>
+          <h3><a id="tokyo" href="tokyo.html" class="city-bubbles__city">Tokyo</a></h3>
+          <h3><a id="rio" href="rio.html" class="city-bubbles__city">Rio</a></h3>
+          <h3><a id="paris" href="paris.html" class="city-bubbles__city">Paris</a></h3>
+          <h3><a id="seattle" href="seattle.html" class="city-bubbles__city">Seattle</a></h3>
+          <h3><a id="cape_town" href="capetown.html" class="city-bubbles__city">Cape Town</a></h3>
+
+        </section>
 
       </article>
 
@@ -70,5 +86,6 @@
 
       </footer>
     </div> <!--end wrapper-->
+    <script src="CultureCake.js"></script>
   </body>
 </html>
