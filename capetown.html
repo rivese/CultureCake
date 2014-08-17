@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Culture Cake</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:700' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="base.css"/>
+    <link type="text/css" rel="stylesheet" href="modules.css"/>
+    <link type="text/css" rel="stylesheet" href="states.css"/>
+  </head>     
+
+  <body>
+    <!-- will put masonry layout into Javascript but placed here for now-->
+    <!--Source: http://sickdesigner.com/masonry-css-getting-awesome-with-css3/-->
+    <style>
+      article {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        -moz-column-gap: 10px;
+        -webkit-column-gap: 10px;
+        column-gap: 10px;
+        margin-top: 20px;
+      }
+
+      article div {
+        display: inline-block;
+        margin: 0 0 10px;
+        width: 100%;
+      }
+
+      .city-name {
+        text-align: center;
+        font-size: 3em;
+        padding: 20px 0 20px;
+      }
+
+    </style>
+
+    <header class="header">
+      <h1 class="header__logo">Culture Cake</h1>
+      <nav class="main-nav">
+
+        <ul class="main-nav__places-about-login">
+          <li class="main-nav__places"><a href="places.html">Places</a></li>
+            <ul class="main-nav__places-dropdown--hover">
+              <li class="main-nav__city"><a href-"seattle.html">Seattle</a></li>
+              <li class="main-nav__city"><a href-"paris.html">Paris</a></li>
+              <li class="main-nav__city"><a href-"mumbai.html">Mumbai</a></li>
+              <li class="main-nav__city"><a href-"tokyo.html">Tokyo</a></li>
+              <li class="main-nav__city"><a href-"capetown.html">Cape Town</a></li>
+              <li class="main-nav__city"><a href-"rio.html">Rio</a></li>
+            </ul>
+          </li>
+          <li class="main-nav__about"><a href="about.html">About</a></li>
+          <li class="main-nav__login--hover"><a href="login.html">Login</a></li>
+        </ul>
+
+      </nav>  
+    </header>
+
+    <h1 class="city-name">Cape Town</h1>
+   <article class="city-images--masonry-layout">
+
+      <div id="city-1"><img src="images/capetown/ct_1.jpg"/></div>
+      <div id="city-1"><img src="images/capetown/ct_2.jpg"/></div>
+      <div id="city-1"><img src="images/capetown/ct_3.jpg"/></div>
+      <div id="city-1"><img src="images/capetown/ct_4.jpg"/></div>
+
+      <div id="city-1"><img src="images/capetown/ct_6.jpg"/></div>
+    <!--  <div id="city-6"><img src="images/Seattle/seattle_7.jpg"/></div> -->
+
+
+
+
+
+
+
+
+    <article class="city-images--masonry-layout">
+      <!-- change to Seattle images-->
+      <!--<div id="1"><img src="../tokyo/tokyo_1.jpg"/></div>
+      <div id="2"><img style="width: 100%; height: auto" src="../tokyo/tokyo_2.png"/></div>
+      <div id="3"><img style="width: 100%; height: auto" src="../tokyo/tokyo_3.jpg"/></div>
+      <div id="4"><img width="100%" height="auto" src="../tokyo/tokyo_4.jpg"/></div>
+      <div id="5"><img width="100%" height="auto" src="../tokyo/tokyo_5.jpeg"/></div>
+      <div id="6"><img width="100%" height="auto" src="../tokyo/tokyo_6.jpg"/></div> -->
+      
+    </article>
+
+    <footer class="connect">
+
+      <ul class="social-media">
+        <li class-"social-media__facebook"><a href="link to facebook"><img src="icon"></a></li>
+        <li class-"social-media__twitter"><a href="link to twitter"><img src="icon"></a></li>
+        <li class-"social-media__pinterest"><a href="link to pinterest"><img src="icon"></a></li>
+        <li class-"social-media__linkedin"><a href="link to linkedin"><img src="icon"></a></li>
+        <li class-"social-media__contact"><a href="popup_link">Say Hello</a></li>
+      </ul>
+      
+      <form class="sign-up">
+        <ul class="sign-up__fields">
+          <li class="sign-up__name"><input type="text" name="first-name"></li>
+          <li class="sign-up__email"><input type="text" name="email"></li>
+          <li class="sign-up__phone"><input type="text" name="phone"></li>
+          <li class="sign-up__address"><input type="text" name="address"></li>
+        </ul>
+        <button class="sign-up__submit" type="button">Submit</button>
+      </form>
+
+    </footer>
+  </body>
+</html>
+
