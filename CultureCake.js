@@ -31,7 +31,7 @@ function hideMenu() {
 function displayForm() {
   var elForm = document.getElementById('form');
   elForm.style.display = 'block';
-  var elCities = document.getElementsByClassName('city-icon--mouseover');
+  var elCities = document.getElementsByClassName('city-trigger--mouseover');
   for (i = 0; i < elCities.length; i++) {
     elCities[i].style.zIndex = '-100';
   }
@@ -45,9 +45,13 @@ function hideForm() {
 
 /* event listeners */
 
-var elCities = document.getElementsByClassName('city-icon--mouseover');
+var elCities = document.getElementsByClassName('city-trigger--mouseover');
 for (i = 0; i < elCities.length; i++) {
   elCities[i].addEventListener('mouseover', popUpCity, false);
+}
+
+var elCities = document.getElementsByClassName('city-bubbles__city');
+for (i = 0; i < elCities.length; i++) {
   elCities[i].addEventListener('mouseout', popOffCity, false);
 }
 
