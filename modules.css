@@ -1,16 +1,19 @@
 body {
   background: url(images/home_page/world_map.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   height: auto;
   width: 100%;
 }
 
 #wrapper {
-  min-height: 100%;
   position: relative;
+}
+
+header { 
+  background-color: #ffea35;
+  height: 70px;
+  margin-top: -20px;
+  padding-top: 10px;
 }
 
 .header__logo {
@@ -58,7 +61,8 @@ body {
   background-color: #ffea35; 
   margin-top: 45px;
   margin-left: 65px;
-  padding-left: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
   display: none;
 }
 
@@ -72,7 +76,7 @@ display: block;
 padding: 10px 15px;
 color: #757575; 
 text-decoration: none;
-font-size: 1em;
+font-size: 1.2em;
 font-family: 'Roboto', sans-serif;
 }
 
@@ -211,7 +215,7 @@ footer {
 
 .city-name {
   text-align: center;
-  color: #4d4d4d;
-  font-size: 3em;
+  color: red;
+  font-size: 3.8em;
   padding: 20px 0 20px;
 }
