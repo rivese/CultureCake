@@ -72,12 +72,12 @@ header {
 }
 
 .places-dropdown--hover li a {
-display: block; 
-padding: 10px 15px;
-color: #757575; 
-text-decoration: none;
-font-size: 1.2em;
-font-family: 'Roboto', sans-serif;
+  display: block; 
+  padding: 10px 15px;
+  color: #757575; 
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .social-media {
@@ -91,39 +91,60 @@ font-family: 'Roboto', sans-serif;
 }
 
 #rio {
-  height: 90px;
-  width: 90px;
   margin-left: 36%;
   margin-top: 30%;
 }
 
+.rio {
+  background: url(images/rio/rio_2.jpg) center no-repeat;
+}
+
 #seattle {
   margin: 9% 0 0 14.5%;
+  color: grey;
+}
+
+.seattle {
+  background: url(images/seattle/seattle_6.jpg) center no-repeat;
 }
 
 #tokyo {
-  height: 70px;
-  width: 70px;
   margin: 15% 0 0 79%;
+}
+
+.tokyo {
+  background: url(images/tokyo/tokyo_7.jpg) center no-repeat;
 }
 
 #paris {
   margin: 12% 0 0 45%;
 }
 
+.paris {
+  background: url(images/paris/paris_1.jpg) center no-repeat;
+  background-size: 100%;
+}
+
 #mumbai {
   margin: 20% 0 0 63%;
+  color: grey;
+}
+
+.mumbai {
+  background: url(images/mumbai/mumbai_4.jpg) center no-repeat;
 }
 
 #cape_town {
-  height: 65px;
-  width: 70px;
   margin: 39% 0 0 52%;
 }
 
+.cape_town {
+  background: url(images/capetown/ct_4.jpg) center no-repeat;
+}
+
 .city-bubbles__city {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-color: #ffea35;
   border-radius: 50%;
   display: none;
@@ -131,7 +152,8 @@ font-family: 'Roboto', sans-serif;
 
 .city-bubbles--hidden a {
   text-decoration: none;
-  padding: 50px 0 0 50px;
+  font-size: 1.2em;
+  color: white;
 }
 
 .sign-up {
